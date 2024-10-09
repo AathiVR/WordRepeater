@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@drawable/todo" />
+    <TextView
+
+        android:text="Repeater"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        />
+    <TextView
+
+        android:text="WORD"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:textSize="25px"
+        android:gravity="center"
+
+        />
+
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1in"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/template"
+        android:gravity="center"
+        android:hint="Enter the Text" />
+
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1.5in"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/template"
+        android:gravity="center"
+        android:hint="Enter No of Repeat"
+        android:inputType="number" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/b0"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/template"
+        android:text="Loop"
+        android:textStyle="bold" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/b3"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/template"
+        android:text="Reset"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/tv1"
+        android:layout_width="800dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/b1"
+        android:layout_marginStart="20dp"
+        android:textIsSelectable="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:background="@drawable/template1" />
+
+    <ImageButton
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/copy_24"
+        android:layout_marginTop="2.6in"
+        android:layout_marginLeft="295dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/b2"
+
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/template"
+        android:text="copy"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
